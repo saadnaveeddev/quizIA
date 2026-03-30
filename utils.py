@@ -51,13 +51,13 @@ def percentage(score: int, total: int) -> float:
 
 
 def performance_label(pct: float) -> str:
-    """Return a human‑readable performance label for a percentage."""
+    """Return a human-readable performance label for a percentage."""
     if pct >= 80:
-        return "🟢 Strong"
+        return "Strong"
     elif pct >= 50:
-        return "🟡 Moderate"
+        return "Moderate"
     else:
-        return "🔴 Needs Improvement"
+        return "Needs Improvement"
 
 
 def ordinal(n: int) -> str:

@@ -233,11 +233,11 @@ def get_dashboard_stats(user_id: int) -> dict:
 
     # Performance label
     if avg_pct >= 80:
-        label = "🟢 Strong"
+        label = "Strong"
     elif avg_pct >= 50:
-        label = "🟡 Moderate"
+        label = "Moderate"
     else:
-        label = "🔴 Needs Improvement"
+        label = "Needs Improvement"
 
     return {
         "total_quizzes": total,
