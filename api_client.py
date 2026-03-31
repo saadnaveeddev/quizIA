@@ -14,7 +14,8 @@ import json
 from abc import ABC, abstractmethod
 from dotenv import load_dotenv
 
-load_dotenv()
+env_path = os.path.join(os.path.dirname(__file__), ".env")
+load_dotenv(env_path)
 
 # ═══════════════════════════════════════════════════════
 #  Abstract base class — every provider implements this
@@ -137,7 +138,7 @@ class GeminiProvider(AIProvider):
                 "Add it to your .env file or export it as an environment variable."
             )
         genai.configure(api_key=api_key)
-        self._model = genai.GenerativeModel("gemini-2.0-flash")
+        self._model = genai.GenerativeModel("gemini-2.5-flash")
 
     # ── question generation ──────────────────────────
     def generate_questions(
