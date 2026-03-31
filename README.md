@@ -78,6 +78,21 @@ The app will open at **http://localhost:8501**.
 
 ---
 
+## ☁️ Deployment
+
+### Streamlit Community Cloud
+1. Push your code to a GitHub repository.
+2. Go to [share.streamlit.io](https://share.streamlit.io/) and select **New app**.
+3. Point it to your GitHub repository and select `app.py` as the main file path.
+4. **Important:** Click **Advanced settings** and paste your environment variables into the **Secrets** box using **TOML format**:
+
+```toml
+GEMINI_API_KEY = "your_actual_key_here"
+AI_PROVIDER = "gemini"
+```
+
+---
+
 ## 🗄️ Database
 
 SQLite database (`quizia.db`) is auto-created on first run with three tables:
