@@ -147,6 +147,9 @@ div[data-testid="stMetric"] [data-testid="stMetricValue"] {
     border-color: var(--accent) !important;
     box-shadow: 0 0 0 2px var(--accent-glow) !important;
 }
+div[data-testid="InputInstructions"] {
+    display: none !important;
+}
 
 /* ----------------------------------------------------------------
    6.  TABS
